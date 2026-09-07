@@ -82,22 +82,22 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 2. Restart your terminal (as requested at the end of the installation process).
 
-3. Install Python 3.10 with `uv`:
+3. Install Python 3.12 with `uv`:
 
 ```zsh
-uv python install 3.10
+uv python install 3.12
 ```
 
 4. Clone this GitHub repository (somewhere on your machine):
 
 ```zsh
-git clone https://github.com/EPFL-IMOS/MLPM2025
+git clone https://github.com/EPFL-IMOS/MLPM2026
 ```
 
 5. Navigate inside the cloned repository:
 
 ```zsh
-cd MLPM2025
+cd MLPM2026
 ```
 
 6. Create the Python virtual environment using `uv`:
@@ -107,7 +107,7 @@ uv sync
 ```
 
 7. Activate the `python` virtual environment we just created. ⚠️ **NOTE**: this must be ran
-everytime you open a new terminal and want to use the `MLPM2025` Python environment.
+everytime you open a new terminal and want to use the `MLPM2026` Python environment.
 ```zsh
 source .venv/bin/activate
 ```
@@ -134,22 +134,22 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 2. Restart your terminal (as requested at the end of the installation process).
 
-3. Install Python 3.10 with `uv`:
+3. Install Python 3.12 with `uv`:
 
 ```powershell
-uv python install 3.10
+uv python install 3.12
 ```
 
 4. Clone this GitHub repository (somewhere on your machine):
 
 ```powershell
-git clone https://github.com/EPFL-IMOS/MLPM2025
+git clone https://github.com/EPFL-IMOS/MLPM2026
 ```
 
 5. Navigate inside the cloned repository:
 
 ```powershell
-cd MLPM2025
+cd MLPM2026
 ```
 
 6. Create the Python virtual environment using `uv`:
@@ -159,7 +159,7 @@ uv sync
 ```
 
 7. Activate the `python` virtual environment we just created. ⚠️ **NOTE**️: this must
-be ran everytime you open a new terminal and want to use the `MLPM2025` Python environment.
+be ran everytime you open a new terminal and want to use the `MLPM2026` Python environment.
 ```powershell
 .venv\Scripts\activate.ps1
 ```
@@ -181,22 +181,22 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 1. Restart your terminal (as requested at the end of the installation process).
 
-2. Install Python 3.10 with `uv`:
+2. Install Python 3.12 with `uv`:
 
 ```bash
-uv python install 3.10
+uv python install 3.12
 ```
 
 4. Clone this GitHub repository (somewhere on your machine):
 
 ```bash
-git clone https://github.com/EPFL-IMOS/MLPM2025
+git clone https://github.com/EPFL-IMOS/MLPM2026
 ```
 
 5. Navigate inside the cloned repository:
 
 ```bash
-cd MLPM2025
+cd MLPM2026
 ```
 
 6. Create the Python virtual environment using `uv`:
@@ -206,7 +206,7 @@ uv sync
 ```
 
 7. Activate the `python` virtual environment we just created. ⚠️ **NOTE**: this must be ran
-everytime you open a new terminal and want to use the `MLPM2025` Python environment.
+everytime you open a new terminal and want to use the `MLPM2026` Python environment.
 ```bash
 source .venv/bin/activate
 ```
@@ -231,7 +231,7 @@ inside VS Code as follows:
     <img src="./media/jupyter_extension.png" alt="Jupyter extension" width="800"/>
 </p>
 
-3. Open the `MLPM2025` directory inside VS Code using "File" >> "Open Folder".
+3. Open the `MLPM2026` directory inside VS Code using "File" >> "Open Folder".
 
 4. Open the `notebooks/test.ipynb` Jupyter Notebook inside VS Code. Select the newly
 created virtual environment as kernel:
@@ -268,24 +268,24 @@ your machine. Change to the right location for your specific machine.
 
 ## Q&A
 
-1. **Can I delete the `MLPM2025` repository after installation?**
+1. **Can I delete the `MLPM2026` repository after installation?**
 
 No you cannot, because your Python virtual environment is stored entirely inside the
 `.venv` folder in the repository.
 
-2. **I want to delete the `MLPM2025` virtual environment. How can I do it?**
+2. **I want to delete the `MLPM2026` virtual environment. How can I do it?**
 
-Navigate to the `MLPM2025` repository on your machine, and delete the `.venv` 
+Navigate to the `MLPM2026` repository on your machine, and delete the `.venv` 
 directory.
 
-3. **I messed up the `MLPM2025` virtual environment. How can I recover?**
+3. **I messed up the `MLPM2026` virtual environment. How can I recover?**
 
-Navigate to the root of the `MLPM2025` repository on your machine, and delete the `.venv` 
-directory. Then, run `uv sync` from a terminal at the root of the `MLPM2025` repository.
+Navigate to the root of the `MLPM2026` repository on your machine, and delete the `.venv` 
+directory. Then, run `uv sync` from a terminal at the root of the `MLPM2026` repository.
 
 4. **The TAs told me to update my virtual environment. How can I do it?**
 
-Navigate to the root of the `MLPM2025` repository on your machine, and run `uv sync` 
+Navigate to the root of the `MLPM2026` repository on your machine, and run `uv sync` 
 from a terminal.
 
 5. **I want to install a new package/dependency. How can I do it?**
