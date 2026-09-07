@@ -1,11 +1,11 @@
 [project]
-name = "mlpm2025"
+name = "mlpm2026"
 version = "0.1.0"
-description = "Machine Learning for Predictive Maintenance 2025"
+description = "Machine Learning for Predictive Maintenance 2026"
 readme = "README.md"
 license-files = ["LICENSE"]
 authors = [{name = "Amaury WEI"}]
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.13"
 dependencies = [
     "black>=25.1.0",
     "gdown>=5.2.0",
@@ -38,40 +38,25 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://moodle.epfl.ch/course/view.php?id=17052"
-Repository = "https://github.com/EPFL-IMOS/MLPM2025"
+Repository = "https://github.com/EPFL-IMOS/MLPM2026"
 
 [tool.uv]
 environments = [
     "sys_platform == 'darwin'",
     "sys_platform == 'linux'",
-    "sys_platform == 'windows'",
     "sys_platform == 'win32'",
 ]
 
 [tool.uv.sources]
 torch = [
-  { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
-  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
+  { index = "torch-gpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
 ]
 torchaudio = [
-  { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
-  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
+  { index = "torch-gpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
 ]
 torchvision = [
-  { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
-  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
+  { index = "torch-gpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
 ]
-
-[[tool.uv.index]]
-name = "torch-cpu"
-url = "https://download.pytorch.org/whl/cpu"
-explicit = true
 
 [[tool.uv.index]]
 name = "torch-gpu"
